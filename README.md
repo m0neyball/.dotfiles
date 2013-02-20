@@ -8,8 +8,7 @@ Installation
 -------------
 * git clone git://github.com/yuchih/dotfiles.git ~/.vim
 * cd ~/.vim
-* git submodule init
-* git submodule update
+* git submodule update --init
 * brew install bash-completion git nodejs
 * **sudo** gem install redcarpet pygments.rb
 * **sudo** npm -g install instant-markdown-d

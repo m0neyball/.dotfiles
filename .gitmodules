@@ -16,6 +16,3 @@
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
 	url = https://github.com/mattn/zencoding-vim.git
-[submodule "bundle/nginx-syntax"]
-	path = bundle/nginx-syntax
-	url = https://github.com/andersjanmyr/nginx-vim-syntax.git

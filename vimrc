@@ -4,6 +4,10 @@ set fencs=utf-8,vim,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
 set fenc=utf-8
 set enc=utf-8
 
+" default, vim-instant-markdown will update the display in
+" realtime.
+let g:instant_markdown_slow = 1
+
 set iminsert=0 imsearch=0
 
 if has('multi_byte_ime')

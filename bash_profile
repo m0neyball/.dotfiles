@@ -79,12 +79,6 @@ On_IWhite='\e[0;107m'   # White
 H_White='\e[01;97m'
 B_White='\e[01;39m'
 
-if [ -d "/usr/local/zend" ]; then
-    PATH=$PATH:/usr/local/zend/bin
-    alias zf='/usr/local/zend/bin/php public/index.php'
-    alias composer='/usr/local/zend/bin/php composer.phar'
-fi
-
 if [ -d "/usr/local/lib/node_modules" ]; then
     export NODE_PATH=/usr/local/lib/node_modules
 fi    
@@ -126,4 +120,9 @@ if [ $EUID = 0 ]; then
     PS1="\[$BRed\]\u\[$White\]@\H\[\e[39m\]: \W\[$BYellow\]\$(__git_ps1)\[$B_White\] $ "
 else
     PS1="\[$BGreen\]\u\[$White\]@\H\[\e[39m\]: \W\[$BYellow\]\$(__git_ps1)\[$B_White\] $ "
+fi
+
+if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
+  GIT_PROMPT_THEME=Default
+  source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi

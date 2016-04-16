@@ -84,7 +84,7 @@ if [ -d "/usr/local/lib/node_modules" ]; then
 fi    
 
 if [ -d "$HOME/.composer/vendor/bin" ]; then
-    export PATH="$PATH:~/.composer/vendor/bin"
+    export PATH="$PATH:~/.composer/vendor/bin:./vendor/bin"
 fi    
 
 if [ -d "/usr/local/share/npm/bin" ]; then
@@ -93,7 +93,7 @@ fi
 
 if [ -f "/usr/local/bin/brew" ]; then
     export GIT_PS1_SHOWDIRTYSTATE=1
-    export HOMEBREW_GITHUB_API_TOKEN=''
+    export HOMEBREW_GITHUB_API_TOKEN='ef38e9e8523061070badbee84b128778724d0d30'
 fi    
 
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then

@@ -1,6 +1,6 @@
 # osx root .bashrc, user .bash_profile
-# @versio 0.03
-# @author yuchih <yuchih@2be.com.tw>
+# @versio 0.04
+# @author fox <fox@moneyball.io>
 
 # Reset
 Color_Off='\e[0m'       # Text Reset
@@ -83,8 +83,17 @@ if [ -d "/usr/local/lib/node_modules" ]; then
     export NODE_PATH=/usr/local/lib/node_modules
 fi    
 
+if [ -d "$HOME/.composer/vendor/bin" ]; then
+    export PATH="$PATH:~/.composer/vendor/bin"
+fi    
+
 if [ -d "/usr/local/share/npm/bin" ]; then
     PATH=$PATH:/usr/local/share/npm/bin
+fi    
+
+if [ -f "/usr/local/bin/brew" ]; then
+    export GIT_PS1_SHOWDIRTYSTATE=1
+    export HOMEBREW_GITHUB_API_TOKEN=''
 fi    
 
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -95,18 +104,6 @@ if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
         . `brew --prefix`/etc/bash_completion
     fi
 
-    # gcc for Zend Server CE
-    # /usr/local/libmemcached-1.0.2/lib/libmemcached.8.dylib
-    # /usr/lib/libltdl.3.dylib
-    MACOSX_DEPLOYMENT_TARGET=10.8
-    CFLAGS="-arch i386 -arch x86_64 -g -Os -pipe -no-cpp-precomp"
-    CCFLAGS="-arch i386 -arch x86_64 -g -Os -pipe"
-    CXXFLAGS="-arch i386 -arch x86_64 -g -Os -pipe"
-    CPPFLAGS="-I/usr/local/opt/gettext/include"
-    LDFLAGS="-arch i386 -arch x86_64 -bind_at_load -L/usr/local/opt/gettext/lib"
-
-    export CFLAGS CXXFLAGS LDFLAGS CCFLAGS MACOSX_DEPLOYMENT_TARGET
-
 elif [ $(uname) == 'Linux' ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     if [ -f $HOME/.vim/LS_COLORS/LS_COLORS ]; then
         eval $( dircolors -b $HOME/.vim/LS_COLORS/LS_COLORS )
@@ -114,15 +111,8 @@ elif [ $(uname) == 'Linux' ] && [ -f /etc/bash_completion ] && ! shopt -oq posix
     . /etc/bash_completion
 fi
 
-export GIT_PS1_SHOWDIRTYSTATE=1
-
 if [ $EUID = 0 ]; then
     PS1="\[$BRed\]\u\[$White\]@\H\[\e[39m\]: \W\[$BYellow\]\$(__git_ps1)\[$B_White\] $ "
 else
     PS1="\[$BGreen\]\u\[$White\]@\H\[\e[39m\]: \W\[$BYellow\]\$(__git_ps1)\[$B_White\] $ "
-fi
-
-if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
-  GIT_PROMPT_THEME=Solarized_UserHost
-  source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 fi

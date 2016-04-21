@@ -93,7 +93,7 @@ fi
 
 if [ -f "/usr/local/bin/brew" ]; then
     export GIT_PS1_SHOWDIRTYSTATE=1
-    export HOMEBREW_GITHUB_API_TOKEN='ef38e9e8523061070badbee84b128778724d0d30'
+    export HOMEBREW_GITHUB_API_TOKEN=''
 fi    
 
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then

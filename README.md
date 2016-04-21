@@ -28,7 +28,7 @@ Installation
 Update git config
 ----------------------
 * ADD personal git config `~/.gitconfig`
-* ADD homebrew Github API into bash_profile `HOMEBREW_GITHUB_API_TOKEN`
+* ADD homebrew Github personal access [tokens](https://github.com/settings/tokens) in bash_profile `HOMEBREW_GITHUB_API_TOKEN`
 
 Chrome extension
 ----------------

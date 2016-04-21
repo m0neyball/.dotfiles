@@ -15,14 +15,12 @@ Installation
 * brew install `bash-completion` `git` `node` `homebrew/php/composer` `homebrew/php/php70`
 * npm -g install `instant-markdown-d`
 
-Create symlinks
----------------
-* ln -s ~/.vim/vimrc `~/.vimrc`
-* ln -s ~/.vim/gitconfig `~/.gitconfig`
-* ln -s ~/.vim/bash_profile `~/.bash_profile`
-* ln -s ~/.vim/sqliterc `~/.sqliterc`
+Build (Makefile)
+----------------
+* make build
 
-**for user root**
+for root (manual)
+-------------
 * ln -s ~{Username}/.vim .
 * ln -s ~{Username}/.vim/vimrc `.vimrc`
 * ln -s ~{Username}/.vim/gitconfig `~/.gitconfig`

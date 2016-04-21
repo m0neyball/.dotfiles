@@ -25,7 +25,7 @@ Installation
 * ln -s ~{Username}/.vim/gitconfig ~/.gitconfig
 * ln -s ~{Username}/vim/bash_profile .profile
 
-Update git config
+Update personal config
 ----------------------
 * ADD personal git config `~/.gitconfig`
 * ADD homebrew Github personal access [tokens](https://github.com/settings/tokens) in bash_profile `HOMEBREW_GITHUB_API_TOKEN`

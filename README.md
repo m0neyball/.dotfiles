@@ -26,7 +26,7 @@ Create symlinks
 * ln -s ~{Username}/.vim .
 * ln -s ~{Username}/.vim/vimrc `.vimrc`
 * ln -s ~{Username}/.vim/gitconfig `~/.gitconfig`
-* ln -s ~/.vim/sqliterc `~/.sqliterc`
+* ln -s ~{Username}/.vim/sqliterc `~/.sqliterc`
 * ln -s ~{Username}/.vim/bash_profile `.profile`
 * ln -s ~{Username}/.vim/sqliterc `~/.sqliterc`
 

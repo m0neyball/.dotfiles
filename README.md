@@ -10,20 +10,25 @@ Installation
 -------------
 * xcode-select --install
 * /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-* cd ~
-* git clone --recursive git@github.com:m0neyball/dotfiles.git ~/.vim
+* git clone --recursive `git@github.com:m0neyball/dotfiles.git` ~/.vim
 * cd ~/.vim
-* brew install bash-completion git node homebrew/php/composer homebrew/php/php70
-* npm -g install instant-markdown-d
-* ln -s ~/.vim/vimrc ~/.vimrc
-* ln -s ~/.vim/gitconfig ~/.gitconfig
-* ln -s ~/.vim/bash_profile ~/.bash_profile
+* brew install `bash-completion` `git` `node` `homebrew/php/composer` `homebrew/php/php70`
+* npm -g install `instant-markdown-d`
 
-**root**
+Create symlinks
+---------------
+* ln -s ~/.vim/vimrc `~/.vimrc`
+* ln -s ~/.vim/gitconfig `~/.gitconfig`
+* ln -s ~/.vim/bash_profile `~/.bash_profile`
+* ln -s ~/.vim/sqliterc `~/.sqliterc`
+
+**for user root**
 * ln -s ~{Username}/.vim .
-* ln -s ~{Username}/.vim/vimrc .vimrc
-* ln -s ~{Username}/.vim/gitconfig ~/.gitconfig
-* ln -s ~{Username}/vim/bash_profile .profile
+* ln -s ~{Username}/.vim/vimrc `.vimrc`
+* ln -s ~{Username}/.vim/gitconfig `~/.gitconfig`
+* ln -s ~/.vim/sqliterc `~/.sqliterc`
+* ln -s ~{Username}/.vim/bash_profile `.profile`
+* ln -s ~{Username}/.vim/sqliterc `~/.sqliterc`
 
 Update personal config
 ----------------------

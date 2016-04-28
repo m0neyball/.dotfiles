@@ -4,8 +4,11 @@ help:
 
 build:
 	@echo "Building..."
-	ln -s ~/.vim/vimrc ~/.vimrc
-	ln -s ~/.vim/gitconfig ~/.gitconfig
-	ln -s ~/.vim/bash_profile ~/.bash_profile
-	ln -s ~/.vim/sqliterc ~/.sqliterc
+	ln -sf ~/.vim/vimrc ~/.vimrc
+	ln -sf ~/.vim/gitconfig ~/.gitconfig
+	ln -sf ~/.vim/bash_profile ~/.bash_profile
+	ln -sf ~/.vim/sqliterc ~/.sqliterc
 
+clean:
+	@echo "Cleaning..."
+	rm -rf ~/.vimrc ~/.gitconfig ~/.bash_profile ~/.sqliterc

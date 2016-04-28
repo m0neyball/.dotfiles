@@ -21,11 +21,11 @@ Build (Makefile)
 
 for root (manual)
 -------------
-* ln -s ~{Username}/.vim .
-* ln -s ~{Username}/.vim/vimrc `.vimrc`
-* ln -s ~{Username}/.vim/gitconfig `~/.gitconfig`
-* ln -s ~{Username}/.vim/sqliterc `~/.sqliterc`
-* ln -s ~{Username}/.vim/bash_profile `.profile`
+* ln -s ~{User}/.vim .
+* ln -s ~{User}/.vim/vimrc `.vimrc`
+* ln -s ~{User}/.vim/gitconfig `~/.gitconfig`
+* ln -s ~{User}/.vim/sqliterc `~/.sqliterc`
+* ln -s ~{User}/.vim/bash_profile `.profile`
 * ln -s ~{Username}/.vim/sqliterc `~/.sqliterc`
 
 Update personal config

@@ -26,7 +26,6 @@ for root (manual)
 * ln -s ~{User}/.vim/gitconfig `~/.gitconfig`
 * ln -s ~{User}/.vim/sqliterc `~/.sqliterc`
 * ln -s ~{User}/.vim/bash_profile `.profile`
-* ln -s ~{Username}/.vim/sqliterc `~/.sqliterc`
 
 Update personal config
 ----------------------

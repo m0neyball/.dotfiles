@@ -9,14 +9,11 @@ Requirements
 Installation
 -------------
 * xcode-select --install
-* /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-* git clone --recursive `git@github.com:m0neyball/dotfiles.git` ~/.vim
-* cd ~/.vim
+* /usr/bin/ruby -e `"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+* git clone --recursive `git@github.com:m0neyball/dotfiles.git` ~
 * brew install `bash-completion` `git` `node` `homebrew/php/composer` `homebrew/php/php70`
 * npm -g install `instant-markdown-d`
-
-Build (Makefile)
-----------------
+* cd ~/dotfiles
 * make build
 
 for root (manual)
@@ -27,7 +24,7 @@ for root (manual)
 * ln -s ~{User}/.vim/sqliterc `~/.sqliterc`
 * ln -s ~{User}/.vim/bash_profile `.profile`
 
-Update personal config
+Fix personal config
 ----------------------
 * ADD personal git config `~/.gitconfig`
 * ADD homebrew Github personal access [tokens](https://github.com/settings/tokens) in bash_profile `HOMEBREW_GITHUB_API_TOKEN`
@@ -42,6 +39,10 @@ Chrome extension
 * [hangouts](https://chrome.google.com/webstore/detail/google-hangouts/nckgahadagoaajjgafhacjanaoiihapd?hl=zh-TW)
 
 Referances
------
+---------
 * [vimcasts](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/) -- vimcasts.org
 * [vim-instant-markdown](https://github.com/suan/vim-instant-markdown.git) -- vim-instant-markdown
+
+Uninstall
+--------
+* make clean

@@ -1,14 +1,15 @@
 help:
-	@echo "Please use 'make <target>' where <target> is one of"
+	@echo "Please use 'make <target>' where <target> is one of:"
 	@echo "		  build           shell environment"
 
 build:
 	@echo "Building..."
-	ln -sf ~/.vim/vimrc ~/.vimrc
-	ln -sf ~/.vim/gitconfig ~/.gitconfig
-	ln -sf ~/.vim/bash_profile ~/.bash_profile
-	ln -sf ~/.vim/sqliterc ~/.sqliterc
+	ln -sf ~/dotfiles ~/.vim
+	ln -sf ~/dotfiles/vimrc ~/.vimrc
+	ln -sf ~/dotfiles/gitconfig ~/.gitconfig
+	ln -sf ~/dotfiles/bash_profile ~/.bash_profile
+	ln -sf ~/dotfiles/sqliterc ~/.sqliterc
 
 clean:
 	@echo "Cleaning..."
-	rm -rf ~/.vimrc ~/.gitconfig ~/.bash_profile ~/.sqliterc
+	rm -rf ~/.vim ~/.vimrc ~/.gitconfig ~/.bash_profile ~/.sqliterc

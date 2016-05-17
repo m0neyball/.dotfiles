@@ -9,25 +9,25 @@ Requirements
 Installation
 -------------
 * xcode-select --install
-* /usr/bin/ruby -e `"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-* git clone --recursive `git@github.com:m0neyball/dotfiles.git` ~
-* brew install `bash-completion` `git` `node` `homebrew/php/composer` `homebrew/php/php70`
-* npm -g install `instant-markdown-d`
+* /usr/bin/ruby -e ``"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``
+* git clone --recursive ``git@github.com:m0neyball/dotfiles.git`` ~
+* brew install ``bash-completion git node homebrew/php/composer homebrew/php/php70``
+* npm -g install ``instant-markdown-d``
 * cd ~/dotfiles
 * make build
 
 for root (manual)
 -------------
 * ln -s ~{User}/.vim .
-* ln -s ~{User}/.vim/vimrc `.vimrc`
-* ln -s ~{User}/.vim/gitconfig `~/.gitconfig`
-* ln -s ~{User}/.vim/sqliterc `~/.sqliterc`
-* ln -s ~{User}/.vim/bash_profile `.profile`
+* ln -s ~{User}/.vim/vimrc **.vimrc**
+* ln -s ~{User}/.vim/gitconfig **~/.gitconfig**
+* ln -s ~{User}/.vim/sqliterc **~/.sqliterc**
+* ln -s ~{User}/.vim/bash_profile **.profile**
 
 Fix personal config
 ----------------------
-* ADD personal git config `~/.gitconfig`
-* ADD homebrew Github personal access [tokens](https://github.com/settings/tokens) in bash_profile `HOMEBREW_GITHUB_API_TOKEN`
+* ADD personal git config **~/.gitconfig**
+* ADD homebrew Github personal access [tokens](https://github.com/settings/tokens) in `~/.bash_profile` found **HOMEBREW_GITHUB_API_TOKEN** add
 
 Chrome extension
 ----------------

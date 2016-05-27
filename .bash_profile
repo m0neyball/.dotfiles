@@ -102,8 +102,8 @@ if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
     fi
 
 elif [ $(uname) == 'Linux' ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    if [ -f $HOME/.vim/LS_COLORS/LS_COLORS ]; then
-        eval $( dircolors -b $HOME/.vim/LS_COLORS/LS_COLORS )
+    if [ -f ~/.dotfiles/LS_COLORS/LS_COLORS ]; then
+        eval $( dircolors -b ~/.dotfiles/LS_COLORS/LS_COLORS )
     fi
     . /etc/bash_completion
 fi

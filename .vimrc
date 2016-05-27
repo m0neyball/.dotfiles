@@ -31,7 +31,6 @@ set t_Co=256
 set nobackup
 set ignorecase 
 set gdefault
-set nu!
 set ai!
 
 " enable backspace

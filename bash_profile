@@ -79,17 +79,14 @@ On_IWhite='\e[0;107m'   # White
 H_White='\e[01;97m'
 B_White='\e[01;39m'
 
-if [ -d "/usr/local/lib/node_modules" ]; then
-    export NODE_PATH=/usr/local/lib/node_modules
-fi    
-
-if [ -d "$HOME/.composer/vendor/bin" ]; then
-    export PATH="$PATH:~/.composer/vendor/bin:./vendor/bin"
-fi    
-
-if [ -d "/usr/local/share/npm/bin" ]; then
-    PATH=$PATH:/usr/local/share/npm/bin
-fi    
+# byobu prompt PS1
+[ -r ~/.byobu/prompt ] && . ~/.byobu/prompt #byobu-prompt#
+# node PATH
+[ -d "/usr/local/lib/node_modules" ] && export NODE_PATH=/usr/local/lib/node_modules
+# composer vendor
+[ -d "$HOME/.composer/vendor/bin" ] && export PATH="$PATH:~/.composer/vendor/bin:./vendor/bin"
+# ADD npm PATH
+[ -d "/usr/local/share/npm/bin" ] && PATH=$PATH:/usr/local/share/npm/bin
 
 if [ -f "/usr/local/bin/brew" ]; then
     export GIT_PS1_SHOWDIRTYSTATE=1

@@ -10,7 +10,7 @@ Installation
 -------------
 * xcode-select --install
 * /usr/bin/ruby -e ``"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``
-* git clone --recursive ``git@github.com:m0neyball/dotfiles.git`` ~
+* git clone --recursive ``git@github.com:m0neyball/.dotfiles.git``
 * brew install ``bash-completion git node homebrew/php/composer homebrew/php/php70 byobu``
 * npm -g install ``instant-markdown-d``
 * cd ~/dotfiles

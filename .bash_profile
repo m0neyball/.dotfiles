@@ -90,7 +90,7 @@ B_White='\e[01;39m'
 
 if [ -f "/usr/local/bin/brew" ]; then
     export GIT_PS1_SHOWDIRTYSTATE=1
-    export HOMEBREW_GITHUB_API_TOKEN=''
+    export HOMEBREW_GITHUB_API_TOKEN='520b42d486a487269a3f3e13a5aaa9ab1942230a'
 fi    
 
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -102,6 +102,8 @@ if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
     fi
 
 elif [ $(uname) == 'Linux' ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    alias ls='ls --color'
+
     if [ -f ~/.dotfiles/LS_COLORS/LS_COLORS ]; then
         eval $( dircolors -b ~/.dotfiles/LS_COLORS/LS_COLORS )
     fi

@@ -6,17 +6,20 @@ Requirements
 * npm
 * php7+
 
-Installation
--------------
+mac os (require):
+-----------------
 * xcode-select --install
 * /usr/bin/ruby -e ``"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``
-* git clone --recursive ``git@github.com:m0neyball/.dotfiles.git``
 * brew install ``bash-completion git node homebrew/php/composer homebrew/php/php70 byobu``
 * npm -g install ``instant-markdown-d``
+
+Installation
+------------
+* git clone --recursive ``https://github.com/m0neyball/.dotfiles.git``
 * cd ~/dotfiles
 * make build
 
-for root (manual)
+root (manual)
 -------------
 * ln -s ~{User}/.vim .
 * ln -s ~{User}/.vim/vimrc **.vimrc**

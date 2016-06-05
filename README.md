@@ -16,7 +16,7 @@ mac os (require):
 Installation
 ------------
 * git clone --recursive ``https://github.com/m0neyball/.dotfiles.git``
-* cd ~/dotfiles
+* cd ~/.dotfiles
 * make build
 
 root (manual)

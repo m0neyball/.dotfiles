@@ -9,7 +9,6 @@
 * xcode-select --install
 * /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 * brew install bash-completion git node tmux byobu
-* composer global require laravel/valet
 * npm -g install instant-markdown-d
 
 # laravel developer

@@ -7,9 +7,17 @@
 
 # osx
 * xcode-select --install
-* /usr/bin/ruby -e ``"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``
-* brew install ``bash-completion git node homebrew/php/composer homebrew/php/php70 byobu``
-* npm -g install ``instant-markdown-d``
+* /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+* brew install bash-completion git node tmux byobu
+* composer global require laravel/valet
+* npm -g install instant-markdown-d
+
+# laravel developer
+* brew install homebrew/php/php70 --with-fpm
+* brew install homebrew/php/composer
+* composer global require laravel/valet
+* valet install
+* valet restart
 
 # linux
 * apt-get install git make

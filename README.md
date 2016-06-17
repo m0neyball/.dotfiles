@@ -11,31 +11,35 @@
 * brew install bash-completion git node tmux byobu
 * npm -g install instant-markdown-d
 
-# laravel developer
+# Laravel developer
 * brew install homebrew/php/php70 --with-fpm
 * brew install homebrew/php/composer
+* composer global require laravel/installer
 * composer global require laravel/valet
 * valet install
 * valet restart
 
-# linux
+# Install Percona MySQL Server
+* brew install percona-server
+
+# Linux
 * apt-get install git make
 
 # Installation
-* git clone --recursive ``https://github.com/m0neyball/.dotfiles.git``
+* git clone --recursive https://github.com/m0neyball/.dotfiles.git
 * cd ~/.dotfiles
 * make build
 
 # root (manual)
 * ln -s ~{User}/.vim .
-* ln -s ~{User}/.vim/vimrc **.vimrc**
-* ln -s ~{User}/.vim/gitconfig **~/.gitconfig**
-* ln -s ~{User}/.vim/sqliterc **~/.sqliterc**
-* ln -s ~{User}/.vim/bash_profile **.profile**
+* ln -s ~{User}/.vim/vimrc .vimrc
+* ln -s ~{User}/.vim/gitconfig ~/.gitconfig
+* ln -s ~{User}/.vim/sqliterc ~/.sqliterc
+* ln -s ~{User}/.vim/bash_profile .profile
 
 # personal config
-* ADD personal git config **~/.gitconfig**
-* ADD homebrew Github personal access [tokens](https://github.com/settings/tokens) in `~/.bash_profile` found **HOMEBREW_GITHUB_API_TOKEN** add
+* ADD personal git config ~/.gitconfig
+* ADD homebrew Github personal access [tokens](https://github.com/settings/tokens) in ~/.bash_profile found HOMEBREW_GITHUB_API_TOKEN add
 
 # Chrome extension
 * [inbox-by-gmail](https://chrome.google.com/webstore/detail/inbox-by-gmail/gkljgfmjocfalijkgoogmfffkhmkbgol)

@@ -31,11 +31,11 @@
 * make build
 
 # root (manual)
-* ln -s ~{User}/.vim .
-* ln -s ~{User}/.vim/vimrc .vimrc
-* ln -s ~{User}/.vim/gitconfig ~/.gitconfig
-* ln -s ~{User}/.vim/sqliterc ~/.sqliterc
-* ln -s ~{User}/.vim/bash_profile .profile
+* ln -s ~User/.vim .
+* ln -s ~User/.vim/vimrc .vimrc
+* ln -s ~User/.vim/gitconfig ~/.gitconfig
+* ln -s ~User/.vim/sqliterc ~/.sqliterc
+* ln -s ~User/.vim/bash_profile .profile
 
 # personal config
 * ADD personal git config ~/.gitconfig

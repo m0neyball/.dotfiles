@@ -2,6 +2,9 @@
 # @versio 0.04
 # @author fox <fox@moneyball.io>
 
+# bash color reference
+# http://misc.flogisoft.com/bash/tip_colors_and_formatting
+
 # Reset
 Color_Off='\e[0m'       # Text Reset
 
@@ -113,5 +116,5 @@ fi
 if [ $EUID = 0 ]; then
     PS1="\[$BRed\]\u\[$White\]@\H\[\e[39m\]: \W\[$BYellow\]\$(__git_ps1)\[$B_White\] $ "
 else
-    PS1="\[$BGreen\]\u\[$White\]@\H\[\e[39m\]: \W\[$BYellow\]\$(__git_ps1)\[$B_White\] $ "
+    PS1="\[$BIYellow\]\u\[$White\]@\H\[\e[39m\]: \W\[$BYellow\]\$(__git_ps1)\[$B_White\] $ "
 fi

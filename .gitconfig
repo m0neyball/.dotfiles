@@ -1,12 +1,12 @@
 [user]
-        name = fox
-        email = fox@moneyball.io
+    name = fox
+    email = fox@moneyball.io
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        log = auto
+    diff = auto
+    status = auto
+    branch = auto
+    log = auto
 [alias]
-        view = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'
+    view = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'
 [core]
-        editor = vim        
+    editor = vim        

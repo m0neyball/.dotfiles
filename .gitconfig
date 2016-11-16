@@ -1,6 +1,6 @@
 [user]
-    name = foxhsiao
-    email = fox@foodbank.io
+  name = foxhsiao
+  email = fox@foodbank.io
 [alias]
   view = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'
 [core]

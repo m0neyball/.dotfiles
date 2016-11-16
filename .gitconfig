@@ -1,15 +1,10 @@
 [user]
     name = foxhsiao
     email = fox@foodbank.io
-[color]
-    diff = auto
-    status = auto
-    branch = auto
-    log = auto
 [alias]
-    view = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'
+  view = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'
 [core]
-    editor = vim        
+  editor = vim        
 [color]
   pager = true
   ui = auto

@@ -16,11 +16,9 @@
 * brew install homebrew/php/composer
 * composer global require laravel/installer
 * composer global require laravel/valet
+* composer global require laravel/spark-installer
 * valet install
 * valet restart
-
-# Install Percona MySQL Server
-* brew install percona-server
 
 # Linux
 * apt-get install git make
@@ -32,10 +30,10 @@
 
 # root (manual)
 * ln -s ~User/.vim .
-* ln -s ~User/.vim/vimrc .vimrc
-* ln -s ~User/.vim/gitconfig ~/.gitconfig
-* ln -s ~User/.vim/sqliterc ~/.sqliterc
-* ln -s ~User/.vim/bash_profile .profile
+* ln -s ~User/.vim/.vimrc .vimrc
+* ln -s ~User/.vim/.gitconfig ~/.gitconfig
+* ln -s ~User/.vim/.sqliterc ~/.sqliterc
+* ln -s ~User/.vim/.bash_profile .profile
 
 # personal config
 * ADD personal git config ~/.gitconfig

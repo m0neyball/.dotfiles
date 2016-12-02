@@ -9,7 +9,7 @@
 * xcode-select --install
 * /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 * brew install bash-completion git node tmux byobu
-* npm -g install npm gulp instant-markdown-d
+* npm -g install gulp instant-markdown-d
 
 # Laravel developer
 * brew install php70 --with-fpm

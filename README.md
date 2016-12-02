@@ -1,5 +1,5 @@
 # Requirements
-* xcode
+* xcode 8.x
 * [homebrew](http://mxcl.github.com/homebrew/)
 * node5+
 * npm
@@ -9,14 +9,14 @@
 * xcode-select --install
 * /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 * brew install bash-completion git node tmux byobu
-* npm -g install instant-markdown-d
+* npm -g install npm gulp instant-markdown-d
 
 # Laravel developer
-* brew install homebrew/php/php70 --with-fpm
-* brew install homebrew/php/composer
+* brew install php70 --with-fpm
+* brew install composer
 * composer global require laravel/installer
 * composer global require laravel/valet
-* composer global require laravel/spark-installer
+* composer global require [hirak/prestissimo](https://github.com/hirak/prestissimo)
 * valet install
 * valet restart
 
